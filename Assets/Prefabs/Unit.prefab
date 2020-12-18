@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7597623639077479560}
   - component: {fileID: 8899257066957354237}
-  - component: {fileID: 3680598783903199073}
   - component: {fileID: 8369956326933934376}
   - component: {fileID: 2280013619607694300}
+  - component: {fileID: 3680598783903199073}
   - component: {fileID: 785292917148721121}
   - component: {fileID: 8009820081911864319}
   m_Layer: 0
@@ -54,21 +54,6 @@ MonoBehaviour:
   serverOnly: 0
   m_AssetId: 
   hasSpawned: 0
---- !u!114 &3680598783903199073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7597623639077479561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57512dd8177d97442aef478ce05fa310, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  agent: {fileID: 8369956326933934376}
 --- !u!195 &8369956326933934376
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -109,6 +94,21 @@ MonoBehaviour:
   localPositionSensitivity: 0.01
   localRotationSensitivity: 0.01
   localScaleSensitivity: 0.01
+--- !u!114 &3680598783903199073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7597623639077479561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57512dd8177d97442aef478ce05fa310, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  agent: {fileID: 8369956326933934376}
 --- !u!114 &785292917148721121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,6 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
+  unitMovement: {fileID: 3680598783903199073}
   onSelected:
     m_PersistentCalls:
       m_Calls:
