@@ -6,8 +6,11 @@ using UnityEngine.InputSystem;
 
 public class UnitSelectionHandler : MonoBehaviour
 {
+    [SerializeField] private RectTransform unitSelectionArea = null;
+
     [SerializeField] private LayerMask layerMask = new LayerMask();
 
+    private RTSPlayer player;
     private Camera mainCamera;
 
     public List<Unit> SelectedUnits { get; } = new List<Unit>();
