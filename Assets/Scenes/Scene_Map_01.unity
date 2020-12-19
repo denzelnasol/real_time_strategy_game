@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 159878505}
   - component: {fileID: 159878508}
   - component: {fileID: 159878507}
-  - component: {fileID: 159878506}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -162,23 +161,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &159878506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159878504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &159878507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,10 +433,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1376713695}
-  - component: {fileID: 1376713694}
   - component: {fileID: 1376713693}
+  - component: {fileID: 1376713694}
   m_Layer: 0
-  m_Name: UnitHandler
+  m_Name: UnitHandlers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -472,6 +454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fdd8fc4cf49ed24596e8edcf1a66fe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unitSelectionArea: {fileID: 1504823811}
   layerMask:
     serializedVersion: 2
     m_Bits: 1
@@ -538,10 +521,10 @@ RectTransform:
   m_Father: {fileID: 159878505}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100.1, y: 100}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1504823812
 MonoBehaviour:
@@ -557,7 +540,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.29411766}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
