@@ -10,7 +10,7 @@ public class UnitFiring : NetworkBehaviour
     [SerializeField] private Transform projectileSpawnPoint = null;
     [SerializeField] private float fireRange = 5f;
     [SerializeField] private float fireRate = 1f;
-    [SerializeField] private float rotationSpeed = 180f;
+    [SerializeField] private float rotationSpeed = 20f;
 
     private float lastFireTime;
     
