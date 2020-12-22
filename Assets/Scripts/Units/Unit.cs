@@ -42,7 +42,7 @@ public class Unit : NetworkBehaviour
     {
         ServerOnUnitDespawned?.Invoke(this);
 
-        health.ServerOnDie += ServerHandleDie;
+        health.ServerOnDie -= ServerHandleDie;
     }
 
     [Server]
